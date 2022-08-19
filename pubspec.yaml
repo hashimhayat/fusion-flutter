@@ -1,0 +1,32 @@
+name: fusion
+description: Split your bills
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: 3.0.1
+
+dependencies:
+  bloc: ^8.1.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.1
+  flutter_localizations:
+    sdk: flutter
+  fusion_api:
+    path: ./packages/fusion_api
+  fusion_ui:
+    path: ./packages/fusion_ui
+  intl: ^0.17.0
+
+dev_dependencies:
+  bloc_test: ^9.1.0
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  very_good_analysis: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  generate: true
